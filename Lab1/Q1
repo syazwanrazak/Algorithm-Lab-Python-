@@ -1,0 +1,11 @@
+def sum1(numList):
+   if len(numList) == 1:
+        return numList[0]
+   else:
+        return numList[0] + sum1(numList[1:])
+
+print("Total elements in array : " + str(sum1([1,2,3])))
+
+print("Total elements in array : " + str(sum1([5,11,2])))
+
+print("Total elements in array : " + str(sum1([7,0,0])))
